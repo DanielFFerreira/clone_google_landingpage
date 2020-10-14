@@ -17,6 +17,11 @@ body {
   height: 100%;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Estilo header */
 .menu {
   height: 48px;
@@ -71,4 +76,117 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+/* Main */
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 56px 8px 0;
+  flex: 1;
+}
+.content__logo {
+  margin: 0 auto;
+  height: 92px;
+  width: 272px;
+}
+.container__search {
+  margin-top: 25px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.content__search {
+  width: 100%;
+  height: 50px;
+  max-width: 650px;
+  padding: 7px 10px 6px 20px;
+
+  font-size: 18px;
+  color: rgba(0,0,0,0.87);
+  background: transparent;
+  border-radius: 25px;
+  border: 1px solid #dadce0;
+  outline: 0;
+}
+.content__search:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+/* Button */
+.center__search {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  margin: 25px auto;
+}
+.button__search {
+  height: 40px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  font-family: arial,sans-serif;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+.button__search a {
+  color: #5F6368;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.disp__languange {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.language a {
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+/* Footer */
+
+.footer {
+  margin-top: 24px;
+
+  display: flex;
+  flex-direction: column;
+  background: #f2f2f2;
+}
+.footer__section:not(:first-child) {
+  border-top: 1px solid #e4e4e4;
+}
+
+.footer__location {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 10px 12px;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 13px;
+  color: #5f6368;
+  padding: 10px;
+}
+
+.footer__links a:not(:first-child) {
+  margin-left: 27px;
+}
+
+/* Media Query */
+
+@media (min-width: 763px) {
+  .content {
+    padding-top: 120px;
+  }
 }
